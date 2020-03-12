@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,13 +7,82 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.example.animationtestdemo.MyCircleView
+        android:id="@+id/my_circle_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@id/my_circle_imageview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.animationtestdemo.MyCircle1View
+        android:id="@+id/my_circle_1_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/my_circle_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.animationtestdemo.MyCircle2View
+        android:id="@+id/my_circle_2_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/my_circle_1_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.animationtestdemo.MyCircleImageView
+        android:id="@+id/my_circle_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/my_circle_view" />
+
+    <com.example.animationtestdemo.MyLocalText
+        android:id="@+id/my_textview_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:text="底单凤是个二笔"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_circle_imageview" />
+
+    <com.example.animationtestdemo.MyLocalView1
+        android:id="@+id/my_view_1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_textview_1" />
+
+    <com.example.animationtestdemo.MyLocalView2
+        android:id="@+id/my_view_2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_view_1" />
+
+    <com.example.animationtestdemo.MyRectView1
+        android:id="@+id/my_rect_1"
+        android:layout_width="236dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_view_2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
