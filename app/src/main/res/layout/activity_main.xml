@@ -171,7 +171,7 @@
     <com.example.animationtestdemo.MyQuadView
         android:id="@+id/my_quad_View"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/my_path_view1"/>
@@ -179,8 +179,16 @@
     <com.example.animationtestdemo.MyCubicView
         android:id="@+id/my_cubic_view"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/my_quad_View"/>
+
+    <com.example.animationtestdemo.MyBitmapView
+        android:id="@+id/my_bitmap_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_cubic_view"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
