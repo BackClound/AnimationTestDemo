@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <com.example.animationtestdemo.paint.PaintShaderLinearGradient
         android:id="@+id/linear_gradient_paint"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.example.animationtestdemo.paint.PaintShaderLinearGradientOne
         android:id="@+id/linear_gradient_paint_one"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_gradient_paint"/>
+        app:layout_constraintTop_toBottomOf="@id/linear_gradient_paint" />
 
     <com.example.animationtestdemo.paint.PaintShaderLinearGradientTwo
         android:id="@+id/linear_gradient_paint_two"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/linear_gradient_paint_one"
-        />
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/linear_gradient_paint_one" />
+
+    <com.example.animationtestdemo.paint.PaintShaderRadialGradient
+        android:id="@+id/radial_fradient_paint_one"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/linear_gradient_paint_two"/>
+
+    <com.example.animationtestdemo.paint.PaintShaderRadialGradientOne
+        android:id="@+id/radial_fradient_paint_two"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/radial_fradient_paint_one"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
