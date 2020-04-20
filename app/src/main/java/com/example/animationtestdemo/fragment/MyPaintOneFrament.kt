@@ -15,7 +15,6 @@ class MyPaintOneFrament : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val rootView = inflater.inflate(R.layout.fragment_paint_one,container, false)
-//        rootView.
         return rootView
     }
 

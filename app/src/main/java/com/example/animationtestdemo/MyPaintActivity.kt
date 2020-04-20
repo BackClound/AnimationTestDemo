@@ -19,6 +19,7 @@ class MyPaintActivity : AppCompatActivity(){
         myFragmentList.add(paintFragmentOne)
         myPaintAdapter = MyFragmentPager(myFragmentList, this.supportFragmentManager)
         my_paint_viewpager.adapter = myPaintAdapter
+        my_paint_viewpager.currentItem = 0
 
     }
 }
